@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Baltensperger</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Source+Sans+Pro:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="./css/animate.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+
+    <header>
+        <div id="headingContentContainer">
+        <h2>Noah Baltensperger</h2>
+<input id="toggle" type="checkbox" class="HiddenCheckbox"></input>
+
+<label for="toggle" class="hamburger">
+  <div class="top-bun hamburgerIcon whiteBurgerIcon"></div>
+  <div class="meat hamburgerIcon whiteBurgerIcon"></div>
+  <div class="bottom-bun hamburgerIcon whiteBurgerIcon"></div>
+</label>
+
+<div class="nav" id="navBar">
+  <div class="nav-wrapper">
+    <nav id="menu">
+      <a class="Menu-link" href="#projectsLink">Projects</a><br>
+      <a class="Menu-link" href="#skillsLink">Skills</a><br>
+      <a class="Menu-link" href="#contactLink">Contact</a><br>
+      <a class="Menu-link" href="./img/Baltensperger_Noah_Resume.pdf" target="blank">Resume</a><br>
+      <a class="Menu-link" href="https://github.com/nbaltens" target="blank">Github</a>
+    </nav>
+  </div>
+</div>
+        <div class="headingContent">
+            <h1>Front End</h1>
+            <h4>Developer</h4>
+            <a href="#projectsLink"><button>View Projects</button></a>
+        </div>
+    </div>
+    </header>
+
+    <section class="about">
+<div class="sectionAbout">
+    <div class="aboutContent">
+        <!-- <p class="smallBlue">About Me</p> -->
+        <p class="aboutMeP"><span class="aboutMeLeadP">Hello</span> my name is Noah. I am a Front End Developer, originally from Rhode Island but now reside in Houston Texas. Since I was young I’ve always enjoyed solving problems through the process of creating. When I started my journey as a Front End Developer I quickly realized that this would not only be a great career option but a life long passion that I could continually grow into.</p>
+    </div>
+
+    <div class="profilePicContainer">
+        <img src="./img/profilePicture.jpg">
+    </div>
+</div>
+<button id="aboutBtn">More About Me</button>
+
+<div class="moreAboutSection">
+
+    <div class="grid-container">
+        <div class="item1 item">
+       
+           <h1>Hobbies</h1>
+           <ul>
+               <li>Coding</li>
+               <li>Traveling</li>
+               <li>Hiking</li>
+               <li>Soccer</li>
+               <li>Snowboarding</li>
+               <li>Writing Music</li>
+               <li>Music Producing</li>
+           </ul>
+
+           <h1>Certifications</h1>
+           <ul>
+               <li>Sailing / Pearl Harbor Recreation Center</li>
+               <li>Scuba Diving / Pearl Harbor Recreation Center</li>
+           </ul>
+  
+           <h1>Community Involvement</h1>
+           <ul>
+               <li>Community Outreach to: Houston, Chicago, Russia, Mexico</li>
+               <li>U8 Head Soccer Coach</li>
+               <li>Speech and Debate Club</li>
+               <li>Highschool Soccer Team</li>
+           </ul>
+        
+           
+        </div>
+        <div class="item2 item">
+            <h2>Places Ive Been</h2>
+            <i class="fa fa-chevron-down"></i>
+
+        </div>
+        <div class="item3 item">
+           <div id="map"></div>
+        </div>  
+      </div>
+</div>
+    </section>
+
+    <section class="projectSection" id="projectsLink">
+        <div class="projectTitile">
+            <p class="smallBlue viewProjectsTitleView">View</p>
+            <h4 class="pageTitle">Projects</h4>
+        </div>
+
+        <section class="projectIsatope">
+        <div class="filters filter-button-group">
+                  <ul><h4>
+                    <li class="active" data-filter="*">All</li>
+                    <li data-filter=".webdev">Website</li>
+                    <li data-filter=".webapp">Web App</li>
+                    <li data-filter=".webgame">Game</li>
+        
+                  </h4></ul>
+                </div>
+        
+                <div class="content grid projectContainer">
+                  <div class="single-content webapp grid-item image-box modalButton" data-modal="#weatherApp">
+                        <img class="p2" src="img/weatherApp.png">
+                        <div class="hoverImgContent">
+                            <h4><span class="projectBoldWord">Weather</span> App</h4>
+                            <button class="projectViewBtn">View Project</button>
+                        </div>
+                  </div>
+        
+                  <div class="single-content brand webdev grid-item image-box modalButton" data-modal="#paoa">
+                        <img class="p2" src="img/paoaone.png">
+                        <div class="hoverImgContent">
+                            <h4><span class="projectBoldWord">Eccomerce</span> Website</h4>
+                            <button class="projectViewBtn">View Project</button>
+                        </div>
+                  </div>
+        
+                  <div class="single-content webapp grid-item image-box modalButton" data-modal="#newsRoom">
+                        <img class="p2" src="img/newsbackground.png">
+                        <div class="hoverImgContent">
+                            <h4><span class="projectBoldWord">News</span> App</h4>
+                            <button class="projectViewBtn">View Project</button>
+                        </div>
+                  </div>
+                    
+                    <div class="single-content webdev grid-item image-box modalButton" data-modal="#pizza">
+                        <img class="p2" src="img/pizza.png">
+                        <div class="hoverImgContent">
+                            <h4><span class="projectBoldWord">Restaurant</span> Website</h4>
+                            <button class="projectViewBtn">View Project</button>
+                        </div>
+                  </div>
+                    
+                    <div class="single-content webapp grid-item image-box modalButton" data-modal="#formValidation">
+                        <img class="p2" src="img/form_img.png">
+                        <div class="hoverImgContent">
+                            <h4><span class="projectBoldWord">Form</span> Validation</h4>
+                            <button class="projectViewBtn">View Project</button>
+                        </div>
+                  </div>
+                    
+                    <div class="single-content webapp brand grid-item image-box modalButton" data-modal="#filmFinder">
+                        <img class="p2" src="img/film_finder_img.png">
+                        <div class="hoverImgContent">
+                            <h4><span class="projectBoldWord">Film</span> Finder</h4>
+                            <button class="projectViewBtn">View Project</button>
+                        </div>
+                  </div>
+                    
+                    <div class="single-content webgame grid-item image-box modalButton" data-modal="#colorGame">
+                        <img class="p2" src="img/color_game.png">
+                        <div class="hoverImgContent">
+                            <h4><span class="projectBoldWord">Guessing</span> Game</h4>
+                            <button class="projectViewBtn">View Project</button>
+                        </div>
+                  </div>
+         
+                </div>
+                
+         </section>
+
+         <section>
+
+         </section>
+
+         <section class="skillSection" id="skillsLink">
+             <div class="skillTitle">
+                <h3>Skills</h3>
+                <i class="fa fa-angle-double-right skillRight"></i>
+                <i class="fa fa-angle-double-down skillDown"></i>
+
+             </div>
+                
+             <div class="skillLogoContainer">
+                <div>
+                    <img src="img/skill_logo/h.png">
+                    <img src="img/skill_logo/cs.png">
+                    <img src="img/skill_logo/js.png">
+                    <img src="img/skill_logo/word.png">
+                </div>
+                <div>
+                    <img src="img/skill_logo/resct.png">
+                    <img src="img/skill_logo/jquery.png">
+                    <img src="img/skill_logo/php.png">
+                    <img src="img/skill_logo/mysql.png">
+
+                </div>
+                <div>
+                    <img src="img/skill_logo/boot.png">
+                    <img src="img/skill_logo/materializeT.png">
+                    <img src="img/skill_logo/sass.png">
+                    <img id="lessLogo" src="img/skill_logo/less.png">
+
+                </div>
+                <div>
+                    <img id="gulpLogo" src="img/skill_logo/gulp.png">
+                    <img id="webpackLogo" src="img/skill_logo/webpack.png">
+                    <img src="img/skill_logo/git.png">
+                    <img src="img/skill_logo/adobee.png">
+
+
+                </div>
+  
+             </div>
+         </section>
+
+         <footer id="contactLink">
+             <h3>Connect</h3>
+             <hr>
+             <ul>
+                 <li><i class="fa fa-envelope contact-icon footIcon"></i>nbalten@gmail.com</li>
+                 <li><i class="fa fa-phone-square contact-icon footIcon"></i>(401) 835-0737</li>
+             </ul>
+             <button>Resume</button>
+             <button>GitHub</button>
+         </footer>
+
+
+
+<!-- MODAL -->
+
+<!-- WEATHER -->
+  
+  <div id="weatherApp" class="modal">
+    <div class="modal-content">
+        <a class="close">&times;</a>
+        <h2>Weather App</h2>
+        <div class="appDescContainer">
+            <div class="appImg">
+                <img src="img/weatherApp.png">
+            </div>
+            <div class="appSkill">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>REACT</li>
+                    <li>Weather API</li>
+                    <li>JSON</li>
+                    <li>Fetch</li>
+                    <li>Responsive Design</li>
+                </ul>
+             <a href="./projects/weather-app"><button class="liveBtn appBtn">View Live</button></a>
+                <a href="https://github.com/nbaltens/React-Weather-App"><button class="gitBtn appBtn">View Code</button></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- PAOA -->
+  
+  <div id="paoa" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>PAOA</h2>
+        <div class="appDescContainer">
+            <div class="appImg">
+                <img src="img/paoaone.png">
+            </div>
+            <div class="appSkill">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Session Storage</li>
+                    <li>JSON</li>
+                    <li>Responsive Design</li>
+                </ul>
+                <a href="./projects/ecomerce/index.html"><button class="liveBtn appBtn">View Live</button></a>
+                <a href="https://github.com/nbaltens/Paoa"><button class="gitBtn appBtn">View Code</button></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!--NEWS ROOM  -->
+
+  <div id="newsRoom" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>News Room</h2>
+        <div class="appDescContainer">
+            <div class="appImg">
+                <img src="img/newsbackground.png">
+            </div>
+            <div class="appSkill">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>jQuery</li>
+                    <li>News API</li>
+                    <li>AJAX</li>
+                    <li>Responsive Design</li>
+                </ul>
+                <a href="./projects/news/index.html"><button class="liveBtn appBtn">View Live</button></a>
+                <a href="https://github.com/nbaltens/News-API-Project"><button class="gitBtn appBtn">View Code</button></a>
+            </div>
+        </div>
+      
+    </div>
+  </div>
+
+  <!-- PIZZA WEBSITE -->
+
+  <div id="pizza" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Pizza Website</h2>
+        <div class="appDescContainer">
+            <div class="appImg">
+                <img src="img/pizza.png">
+            </div>
+            <div class="appSkill">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Google Maps API</li>
+                    <li>Form Submition</li>
+                </ul>
+                <a href="./projects/resturaunt_website/main.html"><button class="liveBtn appBtn">View Live</button></a>
+                <a href="https://github.com/nbaltens/Pizza-Restaurant"><button class="gitBtn appBtn">View Code</button></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- FORM VALIDATION -->
+
+  <div id="formValidation" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Form Validation</h2>
+        <div class="appDescContainer">
+            <div class="appImg">
+                <img src="img/form_img.png">
+            </div>
+            <div class="appSkill">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>JS Form Validation</li>
+                    <li>PHP</li>
+                </ul>
+                <a href="./projects/form_validation/main.html"><button class="liveBtn appBtn">View Live</button></a>
+                <a href="https://github.com/nbaltens/Form-Validation"><button class="gitBtn appBtn">View Code</button></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- FILM FINDER -->
+
+  <div id="filmFinder" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Film Finder</h2>
+        <div class="appDescContainer">
+            <div class="appImg">
+                <img src="img/film_finder_img.png">
+            </div>
+            <div class="appSkill">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>React</li>
+                    <li>Responsive Design</li>
+                    <li>Fetch</li>
+                    <li>Movie DB API</li>
+                    <li>JSON</li>
+                </ul>
+                <a href="./projects/film-finder"><button class="liveBtn appBtn">View Live</button></a>
+                <a href="https://github.com/nbaltens/Film-Finder"><button class="gitBtn appBtn">View Code</button></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- COLOR GAME -->
+
+  <div id="colorGame" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Color Game</h2>
+        <div class="appDescContainer">
+            <div class="appImg">
+                <img src="img/color_game.png">
+            </div>
+            <div class="appSkill">
+                <h3>Development Tools</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                </ul>
+                <a href="./projects/color-game/colorgame.html"><button class="liveBtn appBtn">View Live</button></a>
+                <a href="https://github.com/nbaltens/Color-Guessing-Game"><button class="gitBtn appBtn">View Code</button></a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5T1Kj65PxB9u2y5LwSYaAJkhVCsyA2Eg&callback=initMap"></script>
+</body>
+</html>
