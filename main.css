@@ -14,11 +14,10 @@ html {
 /* HEADING */
  header {
 
-    background: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.1)),url(../img/lightbulb.jpg);
+    background: linear-gradient(rgba(0,0,0,.2),rgba(255,255,255,0.1)),url(./mountain.jpg);
     background-attachment: fixed;
-    background-size: cover;
-    background-position: top;
-    height:90vh;
+    height:100vh;
+    background-position: center;
 
   background-repeat: no-repeat;
    
@@ -90,7 +89,7 @@ nav ul li:hover {
     font-size: 1rem;
 }
 
-header:after {
+/* header:after {
     content: "";
     background: #fff;
     height: 200px;
@@ -102,7 +101,7 @@ header:after {
     bottom: -50px;
     right: 0;
     z-index: 1;
-}
+} */
 .iconBetween  {
     background-color:#747e8a;
     color: aliceblue;
@@ -128,7 +127,7 @@ header:after {
 .about button {
     margin: 20px auto;
     display: block;
-    background-color: #04c2c9;
+    background-color: #4fd0e3;
     border-radius: 15px;
     border: none;
     padding: 10px 10px;
@@ -181,6 +180,7 @@ header:after {
     padding-top: 70px;
     background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(./img/grid_left.jpg);
     background-size: cover;
+
   }
   .item1 h1 {
       letter-spacing: 2px;
@@ -223,7 +223,7 @@ header:after {
 .sectionAbout {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 200px;
+    padding-top: 150px;
     padding-bottom:50px;
 }
 
@@ -242,7 +242,7 @@ header:after {
     text-transform: uppercase;
     font-weight: 100;
     margin: 5px 2px 2px 0;
-    color: #04c2c9;
+    color: #4fd0e3;
     font-family: sans-serif;
 }
 .aboutMeP {
@@ -359,7 +359,7 @@ li.active {
   /* PROJECT SECTION HOVER EFFECT */
 
   .projectSection {
-    background: #f8f9fa;
+    background: #f7f8fc;
     padding-top: 50px;
 }   
 
@@ -396,7 +396,7 @@ li.active {
     display:block;
 }
 .projectBoldWord {
-    color: #04c2c9;
+    color: #4fd0e3;
     font-family: 'Source Sans Pro', sans-serif;
     letter-spacing: 0.1rem;
     font-size: 18px;
@@ -418,7 +418,7 @@ li.active {
     font-size: 18px;
 }
 .projectViewBtn:hover {
-    background: #04c2c9;
+    background: #4fd0e3;
     cursor: pointer;
     color: aliceblue;
     border: none;  
@@ -467,7 +467,7 @@ li.active {
     color:#2F2F33;
 }
 .skillTitle i {
-    color: #04c2c9;
+    color: #4fd0e3;
     font-size: 100px;
     position: relative;
     bottom: 75px;
@@ -521,7 +521,7 @@ li.active {
         font-family: sans-serif;
     }
     footer button:hover {
-        background: #04c2c9;
+        background: #4fd0e3;
         border: none;
     }
   /*MODAL */
@@ -549,7 +549,7 @@ li.active {
 
 /* The Close Button */
 .close {
-    color: #04c2c9;
+    color: #4fd0e3;
     float: right;
     font-size: 35px;
     font-weight: bold;
@@ -575,7 +575,7 @@ li.active {
     margin-bottom:30px;
     width: 300px;
     border-bottom: solid 1px aliceblue;
-    color: #04c2c9;
+    color: #4fd0e3;
 }
 
 .appImg img {
@@ -594,7 +594,7 @@ li.active {
     color: #fed136;
 }
 .appBtn {
-    border: solid #04c2c9 1px;
+    border: solid #4fd0e3 1px;
     border-radius: 4px;
     cursor: pointer;
     background-color: transparent;
@@ -605,7 +605,7 @@ li.active {
     font-family: sans-serif;
 }
 .appBtn:hover {
-    background-color: #04c2c9;
+    background-color:#4fd0e3;
 }
 .liveBtn {
 
@@ -622,7 +622,7 @@ li.active {
 
 @media only screen and (max-width: 600px) {
     .headingContent {
-        margin-top: 10%;
+        margin-top: 40px;
     }
 
     header {
@@ -704,12 +704,10 @@ li.active {
         font-size: 1.6rem;
         margin: 1px;
     }
-    /* .headingContent button {
-        font-size: .8rem;
-        padding: 10px 10px;
-        margin: 4px;
-      } */
-    
+    .headingContent {
+        margin-top: 30px;
+    }
+
 
 }
 
@@ -772,10 +770,12 @@ li.active {
 .item1 h1 {
     margin-top: 5px;
 }
-header {
+/* header {
     background: url(./img/skyBackground.png);
+    background: url(./fire.jpg)
+    ba
   
-}
+} */
 }
 
 @media only screen and (max-width: 1277px) {
@@ -852,7 +852,7 @@ header {
     background-color: aliceblue;
   }
   .solid {
-    background-color: #04c2c9;
+    background-color: #4fd0e3;
 
   }
   .hamburgerIcon {
@@ -871,7 +871,7 @@ header {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #04c2c9;
+    background-color: #4fd0e3;
     top: -100%; left: 0; right: 0; bottom: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -940,12 +940,3 @@ header {
   #toggle:checked + .hamburger .hamburgerIcon {
       background-color: #fed136;
   }
-
-
-
-
-
-
-
-
-
